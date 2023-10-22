@@ -1,0 +1,9 @@
+[workspace]
+resolver = "2"
+members = [
+  "job",
+  "data_collector",
+  "data_matcher",
+  "web",
+  "youtube_data_fetcher",
+]
