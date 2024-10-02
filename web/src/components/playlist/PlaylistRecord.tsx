@@ -45,6 +45,9 @@ export function PlaylistRecord({ record }: { record: SongRecord }) {
         ) : (
           <div className="flex-1 min-w-0">
             <p className="text-xs truncate">
+              {"Title: " + record.song_title + " " + record.anime_title}
+            </p>
+            <p className="text-xs truncate">
               {"Vocal: " + record.vocal + " Guiter: " + record.guiter}
             </p>
             <p className="text-xs truncate">

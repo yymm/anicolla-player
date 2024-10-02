@@ -52,9 +52,10 @@ export function Player() {
   return (
     <>
       <div
-        className={mode === "Youtube" ? "sm:h-80 h-64 hidden" : "sm:h-80 h-64"}
+        className={mode === "Youtube" ? "sm:h-80 h-64 w-full hidden" : "sm:h-80 h-64 w-full"}
       >
-        <canvas className="sm:h-80 h-64" id="audio"></canvas>
+        <canvas className="sm:h-80 h-64 w-full" id="audio-canvas"></canvas>
+        <audio className="hidden" id="audio"></audio>
       </div>
       <div
         className={mode === "Youtube" ? "sm:h-80 h-64" : "sm:h-80 h-64 hidden"}

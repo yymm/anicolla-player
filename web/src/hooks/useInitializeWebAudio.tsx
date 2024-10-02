@@ -9,7 +9,7 @@ export function useInitializeWebAudio() {
       return;
     }
     const audio_ctx = new AudioContext();
-    const canvas: HTMLCanvasElement | null = document.querySelector("#audio");
+    const canvas: HTMLCanvasElement | null = document.querySelector("#audio-canvas");
     const canvas_ctx = canvas!.getContext("2d");
     dispatch({ type: "setAudioPlayer", payload: { audio_ctx, canvas_ctx } });
     // @ts-ignore
